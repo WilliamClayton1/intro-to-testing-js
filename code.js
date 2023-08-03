@@ -18,3 +18,7 @@ function isFive(input) {
         return input === false;
     }
 }
+
+function isEven() {
+
+}
