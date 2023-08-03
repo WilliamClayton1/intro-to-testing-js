@@ -42,11 +42,29 @@ describe('sayHello', function () {
     });
     it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(null)).toBe("Hello, World!");
-    }); it('should return the string "Hello, World!" when executed', function() {
+    });
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello("")).toBe("Hello, World!");
-    }); it('should return the string "Hello, World!" when executed', function() {
+    });
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(NaN)).toBe("Hello, World!");
-    }); it('should return the string "Hello, World!" when executed', function() {
+    });
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(0)).toBe("Hello, World!");
+    });
+});
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it("should return 'false' when called", function() {
+        expect(isFive()).toBe(false);
+    });
+    it('should return "true" when passed', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return "true" when passed', function() {
+        expect(isFive("5")).toBe(true);
     });
 });
