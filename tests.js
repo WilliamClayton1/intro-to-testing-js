@@ -40,4 +40,13 @@ describe('sayHello', function () {
     it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    }); it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    }); it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(NaN)).toBe("Hello, World!");
+    }); it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(0)).toBe("Hello, World!");
+    });
 });
